@@ -8,10 +8,10 @@
 		cursor: pointer;
 
 		mat-card {
-			transition: 250ms ease-in;
+			transition: 225ms ease-in-out;
 
 			&:hover {
-				background-color: colors.$accent-a200;
+				background-color: colors.$accent-a100;
 			}
 		}
 	}

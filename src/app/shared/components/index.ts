@@ -1,3 +1,4 @@
-import { PageTitleComponent } from './page-title';
+import { PageTitleComponent } from './page-title/page-title.component';
+import { FooterComponent } from './footer/footer.component';
 
-export const Components = [PageTitleComponent];
+export const Components = [PageTitleComponent, FooterComponent];

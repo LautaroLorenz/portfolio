@@ -15,5 +15,6 @@ mat-toolbar {
 }
 
 .pages {
-	margin-top: $mat-toolbar-height;
+	min-height: calc(100vh - #{$mat-toolbar-height} - 12px);
+	padding-top: $mat-toolbar-height;
 }

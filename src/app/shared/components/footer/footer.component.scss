@@ -1,0 +1,15 @@
+@use 'colors';
+
+.footer {
+	display: flex;
+	align-items: center;
+	padding: 24px;
+	flex: 1;
+	height: 68px;
+	color: colors.$primary-contrast;
+	background-color: colors.$primary;
+
+	.author {
+		margin: 0;
+	}
+}
