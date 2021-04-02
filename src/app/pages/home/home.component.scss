@@ -1,0 +1,16 @@
+@use 'colors';
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 400px;
+
+	background-color: colors.$primary;
+	color: colors.$primary-contrast;
+
+	.description {
+		text-align: center;
+		max-width: 512px;
+	}
+}

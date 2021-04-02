@@ -1,0 +1,12 @@
+$mat-toolbar-height: 56px;
+
+mat-toolbar {
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	height: $mat-toolbar-height;
+}
+
+.pages {
+	margin-top: $mat-toolbar-height;
+}
