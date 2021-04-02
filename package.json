@@ -10,7 +10,7 @@
 		"lint": "ng lint",
 		"prettier": "prettier --write src/**/*.{ts,js,css,html}",
 		"build-docs": "ng build --prod=true --outputPath=docs --baseHref=/portfolio/",
-		"commit-docs": "git add ./docs && git commit --no-verify -m 'build docs'",
+		"commit-docs": "git add ./docs && git commit -m \"build docs\" --no-verify",
 		"publish": "sh ./publish.sh"
 	},
 	"husky": {
