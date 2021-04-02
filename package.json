@@ -10,12 +10,13 @@
 		"lint": "ng lint",
 		"prettier": "prettier --write src/**/*.{ts,js,css,html}",
 		"build-docs": "ng build --prod=true --outputPath=docs --baseHref=/portfolio/",
+		"push-docs": "git add ./docs && git commit --no-verify -m \"build docs\" && git push --no-verify",
 		"publish": "sh ./publish.sh"
 	},
 	"husky": {
 		"hooks": {
 			"pre-commit": "npm run prettier && ng lint && ng test --watch=false",
-			"pre-push": "npm run build-docs && git add ./docs && git commit --no-verify && git push --no-verify"
+			"pre-push": "npm run build-docs && npm run push-docs"
 		}
 	},
 	"private": true,
