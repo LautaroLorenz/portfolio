@@ -9,12 +9,12 @@
 		"test": "ng test",
 		"lint": "ng lint",
 		"prettier": "prettier --write src/**/*.{ts,js,css,html}",
-		"build-docs": "ng build --prod=true --outputPath=docs --baseHref=/portfolio/",
 		"publish": "sh ./publish.sh"
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "npm run prettier && ng lint && ng test --watch=false && npm run build-docs && git add ./docs"
+			"pre-commit": "npm run prettier && ng lint && ng test --watch=false",
+			"pre-push": "ng build"
 		}
 	},
 	"private": true,
