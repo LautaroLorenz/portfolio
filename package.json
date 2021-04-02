@@ -9,14 +9,12 @@
 		"test": "ng test",
 		"lint": "ng lint",
 		"prettier": "prettier --write src/**/*.{ts,js,css,html}",
-		"build-release": "ng build --prod=true --outputPath=docs --baseHref=/portfolio/",
-		"publish": "git checkout main"
+		"build-release": "ng build --prod=true --outputPath=docs --baseHref=/portfolio/"
 	},
 	"husky": {
 		"hooks": {
 			"pre-commit": "npm run prettier && ng lint && ng test --watch=false",
-			"pre-push": "npm run build-release",
-			"post-receive": "npm run publish"
+			"pre-push": "npm run build-release"
 		}
 	},
 	"private": true,
