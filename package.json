@@ -14,8 +14,7 @@
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "npm run prettier && ng lint && ng test --watch=false && npm run build-publish",
-			"post-receive": "npm run publish"
+			"pre-commit": "npm run prettier && ng lint && ng test --watch=false && npm run build-publish"
 		}
 	},
 	"private": true,
