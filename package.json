@@ -16,7 +16,7 @@
 		"hooks": {
 			"pre-commit": "npm run prettier && ng lint && ng test --watch=false",
 			"pre-push": "npm run build-release",
-			"post-push": "npm run publish"
+			"post-update": "npm run publish"
 		}
 	},
 	"private": true,
