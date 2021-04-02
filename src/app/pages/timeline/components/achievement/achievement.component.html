@@ -1,6 +1,11 @@
 <div class="head">
 	<h3>Hito</h3>
 	<div class="spacer"></div>
-	<div class="dates">{{achievement?.date | date: 'MM/yyyy'}}</div>
+	<div class="dates">
+		<h3>{{achievement?.date | date: 'MM/yyyy'}}</h3>
+	</div>
 </div>
-<mat-chip>{{achievement?.description}}</mat-chip>
+<div class="body">
+	<mat-chip>{{achievement?.description}}</mat-chip>
+	<img src="{{achievement?.img}}" alt="happy" />
+</div>

@@ -4,4 +4,5 @@ export interface Achievement extends TimelineItem {
 	cardType: CardType.achievement;
 	date: string;
 	description: string;
+	img: string;
 }

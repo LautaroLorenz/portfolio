@@ -11,7 +11,8 @@ export class TimelineComponent {
 		{
 			cardType: CardType.achievement,
 			date: '2021-04-01',
-			description: 'Creación del portfolio'
+			description: 'Creación del portfolio',
+			img: './assets/img/two_happy_minions.jpg'
 		},
 		{
 			cardType: CardType.work,
