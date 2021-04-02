@@ -11,6 +11,12 @@
 		"prettier": "prettier --write src/**/*.{ts,js,css,html}",
 		"build-release": "ng build --prod=true --outputPath=docs --baseHref=/portfolio/"
 	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "npm run prettier --staged && ng lint && npm test",
+			"pre-push": "ng build --aot true"
+		}
+	},
 	"private": true,
 	"dependencies": {
 		"@angular/animations": "~11.2.7",
