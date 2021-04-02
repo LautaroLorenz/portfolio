@@ -14,6 +14,13 @@ const routes: Routes = [
 			import('./pages/timeline/timeline.module').then(
 				(m) => m.TimelineModule
 			)
+	},
+	{
+		path: 'projects',
+		loadChildren: () =>
+			import('./pages/projects/projects.module').then(
+				(m) => m.ProjectsModule
+			)
 	}
 ];
 

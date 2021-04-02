@@ -1,10 +1,13 @@
 <mat-toolbar color="primary" class="mat-elevation-z2">
 	<mat-toolbar-row>
 		<button mat-button (click)="redirectTo('./home')">
-			<span>Lorenz Lautaro</span>
+			<span>Inicio</span>
 		</button>
 		<button mat-button (click)="redirectTo('./timeline')">
 			<span>Timeline</span>
+		</button>
+		<button mat-button (click)="redirectTo('./projects')">
+			<span>Proyectos</span>
 		</button>
 		<span class="spacer"></span>
 		<button mat-icon-button (click)="goTo(externalRoutesEnum.linkedin)">

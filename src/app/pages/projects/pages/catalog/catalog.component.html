@@ -1,0 +1,8 @@
+<app-page-title>Proyectos</app-page-title>
+<div class="wrapper" *ngIf="projects$ | async as projects">
+	<app-project
+		*ngFor="let project of projects"
+		[project]="project"
+		(click)="open(project)"
+	></app-project>
+</div>
