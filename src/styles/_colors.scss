@@ -9,9 +9,14 @@ $app-warn: mat-palette($mat-red);
 // Create your Sass color vars (will be available in all the project)
 $primary: mat-color($app-primary);
 $primary-contrast: mat-color($app-primary, '500-contrast');
+$primary-a100: mat-color($app-primary, 'A100');
 
 $accent: mat-color($app-accent);
 $accent-contrast: mat-color($app-accent, '500-contrast');
+$accent-50: mat-color($app-accent, 50);
+$accent-100: mat-color($app-accent, 100);
+$accent-a100: mat-color($app-accent, 'A100');
+$accent-a200: mat-color($app-accent, 'A200');
 
 $warn: mat-color($app-warn);
 $warn-contrast: mat-color($app-warn, '500-contrast');

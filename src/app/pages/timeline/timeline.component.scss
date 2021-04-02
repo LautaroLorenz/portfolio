@@ -1,0 +1,35 @@
+@use 'colors';
+
+mzd-timeline-content ::ng-deep {
+	.mzd-timeline-card {
+		background-color: colors.$accent-50;
+	}
+
+	.head {
+		display: flex;
+		align-items: center;
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin-bottom: 0px;
+		}
+	}
+
+	.spacer {
+		display: flex;
+		flex: 1;
+	}
+
+	.separator {
+		display: flex;
+		margin: 0 8px;
+	}
+}
+
+mzd-timeline-content:after {
+	border-color: colors.$accent;
+}

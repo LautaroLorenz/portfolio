@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { MaterialModule } from './material';
+import { Components } from './components';
 
 @NgModule({
-	declarations: [],
-	imports: [],
-	exports: [MaterialModule],
+	declarations: [Components],
+	imports: [MaterialModule],
+	exports: [MaterialModule, Components],
 	providers: [],
 	bootstrap: []
 })
