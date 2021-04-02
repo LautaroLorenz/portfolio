@@ -1,10 +1,10 @@
 <div class="head">
-	<h1>{{work?.company | titlecase}}</h1>
+	<h1 class="company">{{work?.company | titlecase}}</h1>
 	<div class="spacer"></div>
 	<div class="dates">
-		<h3>{{work?.from | date: 'MM/yyyy'}}</h3>
+		<h3 class="date">{{work?.from | date: 'MM/yyyy'}}</h3>
 		<span class="separator">-</span>
-		<h3>{{(work?.to | date: 'MM/yyyy') || 'Actualidad'}}</h3>
+		<h3 class="date">{{(work?.to | date: 'MM/yyyy') || 'Actualidad'}}</h3>
 	</div>
 </div>
 <h3>{{work?.position}}</h3>
