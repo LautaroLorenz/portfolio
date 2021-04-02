@@ -2,7 +2,7 @@
 
 # merge develop into main
 git checkout main
-git merge develop
+git merge --squash develop
 git push -u origin main
 
 # return to develop

@@ -9,7 +9,7 @@
 		"test": "ng test",
 		"lint": "ng lint",
 		"prettier": "prettier --write src/**/*.{ts,js,css,html}",
-		"build-docs": "ng build --prod=true --outputPath=docs --baseHref=/portfolio/ && sh ./post-build-docs.sh",
+		"build-docs": "ng build --prod=true --outputPath=docs --baseHref=/portfolio/ && git add ./docs",
 		"publish": "sh ./publish.sh"
 	},
 	"husky": {
