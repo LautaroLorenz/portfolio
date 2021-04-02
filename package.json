@@ -14,8 +14,8 @@
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "npm run prettier && ng lint && ng test --watch=false && npm run build-docs",
-			"pre-push": "git add ./docs"
+			"pre-commit": "npm run prettier && ng lint && ng test --watch=false",
+			"pre-push": "npm run build-docs && git add ./docs"
 		}
 	},
 	"private": true,
