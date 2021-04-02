@@ -1,21 +1,21 @@
 #!/usr/bin/env bash
 
 # generate publish version
-echo "generando... docs"
+echo "generando publish version..."
 ng build --prod=true --outputPath=docs --baseHref=/portfolio/
 
 # upload publish version
-echo "subiendo a git... docs"
+echo "subiendo publish version a git..."
 git add ./docs
 git commit --no-verify -m "build docs"
 git push --no-verify
 
 # merge develop into main
-echo "publicando... docs"
+echo "publicando en branch main..."
 git checkout main
 git merge develop
 git push --no-verify
 git checkout develop
 
-echo "publicado."
+echo "publish version subida."
 
