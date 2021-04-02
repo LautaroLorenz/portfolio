@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { ExternalRoutesEnum } from './models/external-routes';
 
 @Component({
 	selector: 'app-root',
@@ -6,7 +8,15 @@ import { Component } from '@angular/core';
 	styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-	public redirectToLinkedin(): void {
-		window.open('https://www.linkedin.com/in/lautaro-lorenz-792629195/');
+	public readonly externalRoutesEnum = ExternalRoutesEnum;
+
+	constructor(private readonly router: Router) {}
+
+	public redirectTo(link: string): void {
+		void this.router.navigate([link]);
+	}
+
+	public goTo(link: ExternalRoutesEnum): void {
+		window.open(link);
 	}
 }

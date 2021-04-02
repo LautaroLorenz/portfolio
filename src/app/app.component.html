@@ -1,8 +1,13 @@
 <mat-toolbar color="primary" class="mat-elevation-z2">
 	<mat-toolbar-row>
-		<span>Lorenz Lautaro</span>
+		<button mat-button (click)="redirectTo('./home')">
+			<span>Lorenz Lautaro</span>
+		</button>
+		<button mat-button (click)="redirectTo('./timeline')">
+			<span>Timeline</span>
+		</button>
 		<span class="spacer"></span>
-		<button mat-icon-button (click)="redirectToLinkedin()">
+		<button mat-icon-button (click)="goTo(externalRoutesEnum.linkedin)">
 			<span
 				class="iconify"
 				data-icon="akar-icons:linkedin-fill"

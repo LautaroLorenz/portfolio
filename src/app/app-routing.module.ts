@@ -7,6 +7,13 @@ const routes: Routes = [
 		path: 'home',
 		loadChildren: () =>
 			import('./pages/home/home.module').then((m) => m.HomeModule)
+	},
+	{
+		path: 'timeline',
+		loadChildren: () =>
+			import('./pages/timeline/timeline.module').then(
+				(m) => m.TimelineModule
+			)
 	}
 ];
 

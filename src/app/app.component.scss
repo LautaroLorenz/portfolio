@@ -5,6 +5,8 @@ mat-toolbar {
 	top: 0;
 	z-index: 2;
 	height: $mat-toolbar-height;
+	min-height: $mat-toolbar-height;
+	max-height: $mat-toolbar-height;
 
 	.spacer {
 		display: flex;
