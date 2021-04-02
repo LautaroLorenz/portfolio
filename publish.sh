@@ -2,7 +2,7 @@
 
 # generate publish version
 echo "generando publish version..."
-ng build --prod=true --outputPath=docs --baseHref=/portfolio/
+npm run build-publish-version
 
 # upload publish version
 echo "subiendo publish version a git..."
