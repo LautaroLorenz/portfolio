@@ -8,6 +8,7 @@ mzd-timeline-content ::ng-deep {
 	.head {
 		display: flex;
 		align-items: center;
+		flex-wrap: wrap;
 
 		h1,
 		h2,
@@ -20,8 +21,14 @@ mzd-timeline-content ::ng-deep {
 	}
 
 	.spacer {
-		display: flex;
+		display: inline-flex;
 		flex: 1;
+		margin-right: 8px;
+	}
+
+	.dates {
+		display: inline-flex;
+		align-items: center;
 	}
 
 	.separator {
