@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Work, PositionEnum } from 'src/app/models/timeline';
+import { CardType, PositionEnum, Timeline } from 'src/app/models/timeline';
 
 @Component({
 	selector: 'app-timeline',
@@ -7,8 +7,14 @@ import { Work, PositionEnum } from 'src/app/models/timeline';
 	styleUrls: ['./timeline.component.scss']
 })
 export class TimelineComponent {
-	public readonly works: Work[] = [
+	public readonly timelines: Timeline[] = [
 		{
+			cardType: CardType.achievement,
+			date: '2021-04-01',
+			description: 'Creación del portfolio'
+		},
+		{
+			cardType: CardType.work,
 			company: 'Mobilecomputing',
 			from: '2020-04-01',
 			to: null,
@@ -19,6 +25,7 @@ export class TimelineComponent {
 			]
 		},
 		{
+			cardType: CardType.work,
 			company: 'BTEK Studio',
 			from: '2019-11-01',
 			to: '2020-03-01',
@@ -29,6 +36,7 @@ export class TimelineComponent {
 			]
 		},
 		{
+			cardType: CardType.work,
 			company: 'Itego',
 			from: '2016-06-01',
 			to: '2019-10-01',
@@ -40,6 +48,7 @@ export class TimelineComponent {
 			]
 		},
 		{
+			cardType: CardType.work,
 			company: 'Nandxor',
 			from: '2015-02-01',
 			to: '2016-05-01',
@@ -50,4 +59,6 @@ export class TimelineComponent {
 			]
 		}
 	];
+
+	public readonly cardTypes = CardType;
 }

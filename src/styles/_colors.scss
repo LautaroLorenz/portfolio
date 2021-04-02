@@ -10,6 +10,7 @@ $app-warn: mat-palette($mat-red);
 $primary: mat-color($app-primary);
 $primary-contrast: mat-color($app-primary, '500-contrast');
 $primary-a100: mat-color($app-primary, 'A100');
+$primary-a200: mat-color($app-primary, 'A200');
 
 $accent: mat-color($app-accent);
 $accent-contrast: mat-color($app-accent, '500-contrast');
