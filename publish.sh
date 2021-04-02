@@ -2,6 +2,8 @@
 
 # generate publish version
 ng build --prod=true --outputPath=docs --baseHref=/portfolio/
+
+# upload publish version
 git add ./docs
 git commit --no-verify -m "build docs"
 git push --no-verify
